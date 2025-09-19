@@ -80,6 +80,18 @@ function runCode() {
     iframeDocument.close();
 }
 
+// Simulate Redirect
+function simulateRedirect() {
+    // Show the iframe
+    const iframeContainer = document.getElementById("iframeContainer");
+    iframeContainer.style.display = "block";
+
+    // Set the URL to simulate the redirect
+    const iframe = document.getElementById("redirectedIframe");
+    iframe.src = "https://example.com"; // Replace with your desired URL
+    console.log("Redirecting to: " + iframe.src);
+}
+
 // Load the code compiler when the page loads
 function loadCompiler() {
     hideAllSections();
