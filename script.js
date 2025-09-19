@@ -1,5 +1,3 @@
-Script.js
-
 // Hide all content sections
 function hideAllSections() {
     document.getElementById('homeContent').style.display = 'none';
