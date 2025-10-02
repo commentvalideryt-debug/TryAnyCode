@@ -1,0 +1,17 @@
+{
+  "name": "tryanycode",
+  "version": "1.0.0",
+  "description": "a site where you can try any code you want, HTML, CSS, javascript and more will come !",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": ["code-runner", "html", "css", "javascript", "compiler"],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "vite": "^7.1.8"
+  }
+}
