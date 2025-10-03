@@ -21,6 +21,7 @@ document.getElementById('aboutLink').addEventListener('click', function() {
 document.getElementById('tryCodeLink').addEventListener('click', function() {
     hideAllSections();
     document.getElementById('codeCompiler').style.display = 'block';
+    switchTab('html');
 });
 
 // Switch between tabs (HTML, CSS, JavaScript)
@@ -80,14 +81,7 @@ function runCode() {
     iframeDocument.close();
 }
 
-// Load the code compiler when the page loads
-function loadCompiler() {
-    hideAllSections();
-    document.getElementById('codeCompiler').style.display = 'block';
-}
-
 // Initialize the page
 window.onload = function() {
-    switchTab('html');
-    runCode();
+    document.getElementById('homeContent').style.display = 'block';
 };
