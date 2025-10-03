@@ -3,96 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TryAnyCode - HTML, CSS, JavaScript Runner</title>
-  <script type="module" crossorigin src="/assets/index-DiFxtJVi.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/index-DGuSC35W.css">
+    <title>TryAnyCode - Multi-Language Code Compiler</title>
+  <script type="module" crossorigin src="/assets/index-D0luNI8j.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-C8Ue1Yet.css">
 </head>
 <body>
-
-<!-- Navigation Menu -->
-<div class="menu">
-    <a href="#" id="homeLink">Home</a>
-    <a href="#" id="aboutLink">About Us</a>
-    <a href="#" id="tryCodeLink">Try a Code</a>
-</div>
-
-<!-- Title -->
-<div class="header">
-    TryAnyCode
-</div>
-
-<!-- Main Content -->
-<div class="container" id="homeContent">
-    <h1>Welcome!</h1>
-    <p>To try a code, please press the button below this text.</p>
-    <button onclick="loadCompiler()">Load Code Compiler</button>
-</div>
-
-<!-- About Us Page -->
-<div class="container about-container" id="aboutContent" style="display: none;">
-    <h1>About Us</h1>
-    <p>Hello, welcome to the coding site. I personally made this site because I thought there weren't a lot of compiler sites. This code site can make you anything you want! There's HTML, CSS, Javascript. Though, there might be bugs so please report it at my GitHub: github.com/commentvalideryt-debug . Thanks for testing !</p>
-</div>
-
-<!-- Code Compiler (hidden by default) -->
-<div class="container" id="codeCompiler" style="display: none;">
-    <h1>HTML, CSS, and JavaScript Code Runner</h1>
-    
-    <!-- Tabs for switching between HTML, CSS, and JavaScript -->
-    <div class="tabs">
-        <div class="tab active-tab" id="htmlTab" onclick="switchTab('html')">HTML</div>
-        <div class="tab" id="cssTab" onclick="switchTab('css')">CSS</div>
-        <div class="tab" id="jsTab" onclick="switchTab('js')">JavaScript</div>
-    </div>
-    
-    <!-- Textareas for HTML, CSS, and JavaScript -->
-    <textarea id="htmlInput" style="display: block;"><!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Complex HTML Layout</title>
-</head>
-<body>
-    <header>
-        <h1>Welcome to Our Website</h1>
-        <p>We provide the best services for your needs</p>
-    </header>
-</body>
-</html>
-    </textarea>
-
-    <textarea id="cssInput" style="display: none;">body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    text-align: center;
-}
-header {
-    background-color: #4CAF50;
-    color: white;
-    padding: 20px;
-}
-    </textarea>
-
-    <textarea id="jsInput" style="display: none;">console.log('JavaScript is working!');
-document.querySelector('h1').addEventListener('click', function() {
-    alert('You clicked the header!');
-});
-    </textarea>
-
-    <button onclick="runCode()">Run Code</button>
-
-    <div class="output-container">
-        <div class="preview">
-            <h3>Preview</h3>
-            <iframe id="previewFrame"></iframe>
-        </div>
-        <div id="outputCode">
-            <h3>Your Code</h3>
-            <pre id="codeDisplay"></pre>
-        </div>
-    </div>
-</div>
-
+    <div id="root"></div>
 </body>
 </html>
